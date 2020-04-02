@@ -185,7 +185,7 @@ public abstract class BasePopup : MonoBehaviour {
     /// <summary>
     /// 初始化方法，继承后必调
     /// </summary>
-    public void Init()
+    public void Awake()
     {
         group = gameObject.GetComponent<CanvasGroup>();
         if (group == null)

@@ -36,7 +36,7 @@ public class PopupCommon : BasePopup
 
     private void Awake()
     {
-        base.Init();
+        base.Awake();
         if (mng == null)
             mng = this;
 
@@ -46,6 +46,11 @@ public class PopupCommon : BasePopup
         animType = base.DefaultAnimType;
         ease = base.DefaultEase;
         animSpeed = base.DefaultAnimSpeed;
+    }
+
+    private void Start()
+    {
+        gameObject.SetActive(false);
     }
 
     public void OnBtnSureClick()
