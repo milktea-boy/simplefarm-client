@@ -37,7 +37,8 @@ namespace LoginScene
 
         private void OnLoginCallback(Hashtable data)
         {
-            loginCallback(data);
+            if (loginCallback != null)
+                loginCallback(data);
         }
     }
 }

@@ -38,7 +38,8 @@ namespace LoginScene
 
         private void RegisterCallback(Hashtable data)
         {
-            registerCallback(data);
+            if (registerCallback != null)
+                registerCallback(data);
         }
     }
 }
