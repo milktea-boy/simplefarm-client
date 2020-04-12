@@ -59,6 +59,11 @@ namespace GameScene {
             string curLevel = data["buildInfo"].ToString();
 
             this.curBuildingLevel = int.Parse(curLevel);
+            ArrayList buildInfo = data["buildInfo"] as ArrayList;
+            for (int i = 0; i < buildInfo.Count; i++) {
+                Hashtable args = buildInfo[0] as Hashtable;
+                this.curBuildingLevel = int.Parse(args["level"].ToString());
+            }
             //ArrayList buildInfoArrayList = data["buildInfo"]; //先跳过
 
         }

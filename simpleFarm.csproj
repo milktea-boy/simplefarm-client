@@ -365,6 +365,9 @@
     <Compile Include="Assets\Scprits\Game\3D\View\ShopView.cs" />
     <Compile Include="Assets\Scprits\Game\3D\View\WarehouseView.cs" />
     <Compile Include="Assets\Scprits\Game\3D\View\WellView.cs" />
+    <Compile Include="Assets\Scprits\Game\initialization\Controller\initializationController.cs" />
+    <Compile Include="Assets\Scprits\Game\initialization\Model\initializationModel.cs" />
+    <Compile Include="Assets\Scprits\Game\initialization\View\initializationView.cs" />
     <Compile Include="Assets\Scprits\Game\UI\Controller\PopupGroundController.cs" />
     <Compile Include="Assets\Scprits\Game\UI\Controller\PopupHomeController.cs" />
     <Compile Include="Assets\Scprits\Game\UI\Controller\PopupHunterController.cs" />
