@@ -23,7 +23,7 @@ namespace GameScene
         }
 
         /// <summary>
-        /// 初始化
+        /// 初始化农场信息(刷新数据)
         /// </summary>
         /// <param name="callback"></param>
         public void Initialization(Action<Hashtable> callback)

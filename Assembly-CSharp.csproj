@@ -231,6 +231,8 @@
      <Compile Include="Assets\Scprits\Game\Touch\Controller\TouchController.cs" />
      <Compile Include="Assets\Scprits\Game\Touch\Model\TouchModel.cs" />
      <Compile Include="Assets\Scprits\Game\Touch\View\TouchView.cs" />
+     <Compile Include="Assets\Scprits\Game\UI\Controller\GameMainUIController.cs" />
+     <Compile Include="Assets\Scprits\Game\UI\Controller\PopupDetailedController.cs" />
      <Compile Include="Assets\Scprits\Game\UI\Controller\PopupGroundController.cs" />
      <Compile Include="Assets\Scprits\Game\UI\Controller\PopupHomeController.cs" />
      <Compile Include="Assets\Scprits\Game\UI\Controller\PopupHunterController.cs" />
@@ -238,6 +240,8 @@
      <Compile Include="Assets\Scprits\Game\UI\Controller\PopupShopController.cs" />
      <Compile Include="Assets\Scprits\Game\UI\Controller\PopupWarehouseController.cs" />
      <Compile Include="Assets\Scprits\Game\UI\Controller\PopupWellController.cs" />
+     <Compile Include="Assets\Scprits\Game\UI\Model\GameMainUIModel.cs" />
+     <Compile Include="Assets\Scprits\Game\UI\Model\PopupDetailedModel.cs" />
      <Compile Include="Assets\Scprits\Game\UI\Model\PopupGroundModel.cs" />
      <Compile Include="Assets\Scprits\Game\UI\Model\PopupHomeModel.cs" />
      <Compile Include="Assets\Scprits\Game\UI\Model\PopupHunterModel.cs" />
@@ -245,6 +249,8 @@
      <Compile Include="Assets\Scprits\Game\UI\Model\PopupShopModel.cs" />
      <Compile Include="Assets\Scprits\Game\UI\Model\PopupWarehouseModel.cs" />
      <Compile Include="Assets\Scprits\Game\UI\Model\PopupWellModel.cs" />
+     <Compile Include="Assets\Scprits\Game\UI\View\GameMainUIView.cs" />
+     <Compile Include="Assets\Scprits\Game\UI\View\PopupDetailedView.cs" />
      <Compile Include="Assets\Scprits\Game\UI\View\PopupGroundView.cs" />
      <Compile Include="Assets\Scprits\Game\UI\View\PopupHomeView.cs" />
      <Compile Include="Assets\Scprits\Game\UI\View\PopupHunterView.cs" />

@@ -153,8 +153,6 @@ public class SocketServer : MonoBehaviour
 
         MyTransmit.RemoveEventListener(name);
     }
-
-
     void OnDestroy()
     {
         Debug.Log("socket close");

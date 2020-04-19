@@ -10,14 +10,12 @@ namespace GameScene {
     /// </summary>
     public class PopupHomeModel : MonoBehaviour {
 
-        private Action<Hashtable> farmInfoCallback;
         private Action<Hashtable> farmDetailInfoCallback;
         private Action<Hashtable> upgradeCallback;
         private Action<Hashtable> upgradeInfoCallback;
 
         private void Awake()
         {
-            SocketServer.GetSingleton().AddListener("global/farmInfo", OnUpgradeCallback);
             SocketServer.GetSingleton().AddListener("global/farmDetailInfo",OnUpgradeCallback);
             SocketServer.GetSingleton().AddListener("global/upgradeBuildInfo", OnUpgradeCallback);
             SocketServer.GetSingleton().AddListener("global/upgradeBuild", OnUpgradeCallback);
@@ -25,20 +23,9 @@ namespace GameScene {
 
         private void OnDestroy()
         {
-            SocketServer.GetSingleton().RemoveListener("global/farmInfo");
             SocketServer.GetSingleton().RemoveListener("global/farmDetailInfo");
             SocketServer.GetSingleton().RemoveListener("global/upgradeBuildInfo");
             SocketServer.GetSingleton().RemoveListener("global/upgradeBuild");
-        }
-
-        /// <summary>
-        /// 获取农场信息
-        /// </summary>
-        /// <param name="callback"></param>
-        public void GetFarmInfo(Action<Hashtable> callback)
-        {
-            farmInfoCallback = callback;
-            SocketServer.GetSingleton().Send("global/farmInfo", new object[] { });
         }
 
         /// <summary>
@@ -70,14 +57,6 @@ namespace GameScene {
         {
             upgradeCallback = callback;
             SocketServer.GetSingleton().Send("global/upgradeBuild",new object[] { buildID});
-        }
-
-        private void OnfarmInfoCallback(Hashtable data)
-        {
-            if (farmInfoCallback != null)
-            {
-                farmInfoCallback(data);
-            }
         }
 
         private void OnfarmDetailInfoCallback(Hashtable data)

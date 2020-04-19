@@ -68,6 +68,9 @@
      <Compile Include="Assets\Plugins\EasyTouch\Engine\Finger.cs" />
      <Compile Include="Assets\Plugins\EasyTouch\Engine\Gesture.cs" />
      <Compile Include="Assets\Plugins\EasyTouch\Engine\TwoFingerGesture.cs" />
+     <Compile Include="Assets\Plugins\RoundPicture\BaseImage.cs" />
+     <Compile Include="Assets\Plugins\RoundPicture\CircleImage.cs" />
+     <Compile Include="Assets\Plugins\RoundPicture\SetPropertyUtility.cs" />
  <Reference Include="UnityEngine.CoreModule">
  <HintPath>E:/LEE/Software/u3d/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
  </Reference>

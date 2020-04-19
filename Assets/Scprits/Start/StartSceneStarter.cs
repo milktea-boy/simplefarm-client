@@ -30,7 +30,12 @@ namespace StartScene
             if (!Constant.Constants.socketConnected)
                 return;
 
-            SceneManager.LoadScene("Login");
+
+            Scene nowScene = SceneManager.GetActiveScene();
+            if (nowScene.name == "Start")
+            {
+                SceneManager.LoadScene("Login");
+            }
         }
 
     }

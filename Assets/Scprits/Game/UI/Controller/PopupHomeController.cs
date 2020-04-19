@@ -22,8 +22,6 @@ namespace GameScene {
         {
             base.Awake();
 
-            Model.GetFarmInfo(OnfarmInfoCallback);
-
             Model.GetFarmDetailInfo(OnfarmDetailInfoCallback);
 
             Model.GetUpgradeInfo(0,OnUpgradeInfoCallback);
@@ -32,40 +30,6 @@ namespace GameScene {
         private void OnDestroy()
         {
             
-        }
-
-        /// <summary>
-        /// 家建筑升级点击事件
-        /// </summary>
-        public void OnBtnUpgradeClick()
-        {
-            if (this.farmLevel > this.curBuildingLevel && this.curExp > this.upgradeNeedExp && this.curCoin > this.upPrice)
-            {
-                Model.Upgrade(0, OnUpgradeCallback);
-            }
-        }
-
-        private void OnfarmInfoCallback(Hashtable data)
-        {
-            bool success = bool.Parse(data["success"].ToString());
-            string message = data["message"].ToString();
-
-            if (!success)
-            {
-                PopupCommon.GetSingleton().ShowView(message);
-                return;
-            }
-
-            string curLevel = data["buildInfo"].ToString();
-
-            this.curBuildingLevel = int.Parse(curLevel);
-            ArrayList buildInfo = data["buildInfo"] as ArrayList;
-            for (int i = 0; i < buildInfo.Count; i++) {
-                Hashtable args = buildInfo[0] as Hashtable;
-                this.curBuildingLevel = int.Parse(args["level"].ToString());
-            }
-            //ArrayList buildInfoArrayList = data["buildInfo"]; //先跳过
-
         }
 
         private void OnfarmDetailInfoCallback(Hashtable data)

@@ -13,14 +13,14 @@ namespace GameScene {
         {
             base.Awake();
 
-            MessageManager.GetSingleton().RegisterMessageListener("Initialization_buildInfo_5", SetData);
-            MessageManager.GetSingleton().RegisterMessageListener("Initialization_buildInfo_6", SetData);
+            //MessageManager.GetSingleton().RegisterMessageListener("Initialization_buildInfo_5", SetData);
+            //MessageManager.GetSingleton().RegisterMessageListener("Initialization_buildInfo_6", SetData);
         }
 
         private void OnDestroy()
         {
-            MessageManager.GetSingleton().UnRegisterMessageListener("Initialization_buildInfo_5", SetData);
-            MessageManager.GetSingleton().UnRegisterMessageListener("Initialization_buildInfo_6", SetData);
+            //MessageManager.GetSingleton().UnRegisterMessageListener("Initialization_buildInfo_5", SetData);
+            //MessageManager.GetSingleton().UnRegisterMessageListener("Initialization_buildInfo_6", SetData);
         }
 
         public void SetData(object data)
