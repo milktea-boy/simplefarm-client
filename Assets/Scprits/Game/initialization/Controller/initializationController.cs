@@ -16,11 +16,13 @@ namespace GameScene
             base.Awake();
 
             Model.Initialization(InitializationCallback);
+
+            MessageManager.GetSingleton().RegisterMessageListener("Refresh_GameScene", RefreshGameScene);
         }
 
         private void OnDestroy()
         {
-
+            MessageManager.GetSingleton().UnRegisterMessageListener("Refresh_GameScene", RefreshGameScene);
         }
 
         /// <summary>
@@ -77,7 +79,8 @@ namespace GameScene
                         int buildId = int.Parse(args["buildId"].ToString());//建筑ID
                         int buildLevel = int.Parse(args["level"].ToString());//建筑等级
                         int maxLevel = int.Parse(args["maxLevel"].ToString());//当前农场等级的最大等级
-                        MessageManager.GetSingleton().SendMsg("Initialization_buildInfo_" + i, new object[] { buildId, buildLevel, maxLevel });
+                        MessageManager.GetSingleton().SendMsg("Initialization_buildInfo_" + i, new object[] { buildId, buildLevel, maxLevel, level,coin,nickName,exp,needExp});
+                                                                                                           //建筑ID    建筑等级    建筑最大级 主等级  金币  昵称  经验  所需经验  
                     }
                 }
             }
@@ -91,6 +94,11 @@ namespace GameScene
 
             int hunterState = int.Parse(data["hunterState"].ToString());//猎人小屋状态，0-未派出，1-已派出，2-可收获，当猎人小屋已创建时存在
             */
+        }
+
+        private void RefreshGameScene(object data)
+        {
+            Model.Initialization(InitializationCallback);
         }
 
     }
