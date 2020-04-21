@@ -63,7 +63,7 @@ namespace GameScene
 
             Debug.Log("开始分发buildInfo----------------------------------------------");
 
-            //分发buildInfo信息
+            //分发buildInfo信息(后五项农场等级level、金币数coin、昵称nickName、经验exp、升级所需经验needExp 为每个建筑3D控制器都发送)
             ArrayList buildInfo = data["buildInfo"] as ArrayList;//建筑信息 - 建筑ID、建筑等级0为未建立、当前农场最大等级
 
             Debug.Log("buildInfo的个数是：" + buildInfo.Count);

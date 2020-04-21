@@ -717,6 +717,26 @@ Transform:
   m_Father: {fileID: 1731810459}
   m_RootOrder: 94
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 0}
+--- !u!4 &34578203
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4805032930011366, guid: cb1b5705a2068cf419461fae9845e756,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 252729033}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 88563925}
+  - {fileID: 1080680174}
+  - {fileID: 986086331}
+  - {fileID: 474210469}
+  - {fileID: 1103136122}
+  - {fileID: 736770041}
+  m_Father: {fileID: 1899261945}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &39473548
 Prefab:
   m_ObjectHideFlags: 0
@@ -1770,6 +1790,89 @@ Transform:
   m_Father: {fileID: 1731810459}
   m_RootOrder: 221
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &82164405
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1311973070079692, guid: 138da7529c25386408500b46581b8e33,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 82164406}
+  - component: {fileID: 82164407}
+  - component: {fileID: 82164408}
+  m_Layer: 0
+  m_Name: 6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &82164406
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4743528531649204, guid: 138da7529c25386408500b46581b8e33,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 82164405}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.73399925, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 619619598}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &82164407
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 82164405}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4672354, y: 1, z: 1.4672351}
+  m_Center: {x: -0.0027023554, y: 0, z: 0.0033770204}
+--- !u!114 &82164408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 82164405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9c933eb8b407754a8f98425dfaa784f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quickActionName: 4
+  isMultiTouch: 0
+  is2Finger: 0
+  isOnTouch: 0
+  enablePickOverUI: 0
+  resetPhysic: 0
+  directAction: 0
+  axesAction: 0
+  sensibility: 1
+  directCharacterController: {fileID: 0}
+  inverseAxisValue: 0
+  onTap:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1677641240}
+        m_MethodName: OnTap
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: HedgehogTeam.EasyTouch.QuickTap+OnTap, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  actionTriggering: 0
 --- !u!1001 &82474021
 Prefab:
   m_ObjectHideFlags: 0
@@ -2006,6 +2109,89 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1829700969}
   m_GameObject: {fileID: 87193927}
   m_Mesh: {fileID: 4300000, guid: 2f6e99bbe5bb1c94a8ec99d3c33a6d47, type: 3}
+--- !u!1 &88563924
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1720039334830112, guid: cb1b5705a2068cf419461fae9845e756,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 88563925}
+  - component: {fileID: 88563926}
+  - component: {fileID: 88563927}
+  m_Layer: 0
+  m_Name: 5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &88563925
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4656945270253876, guid: cb1b5705a2068cf419461fae9845e756,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 88563924}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.73399925, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 34578203}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &88563926
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 88563924}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4672354, y: 1, z: 1.4672351}
+  m_Center: {x: -0.0027023554, y: 0, z: 0.0033770204}
+--- !u!114 &88563927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 88563924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9c933eb8b407754a8f98425dfaa784f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quickActionName: 4
+  isMultiTouch: 0
+  is2Finger: 0
+  isOnTouch: 0
+  enablePickOverUI: 0
+  resetPhysic: 0
+  directAction: 0
+  axesAction: 0
+  sensibility: 1
+  directCharacterController: {fileID: 0}
+  inverseAxisValue: 0
+  onTap:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1677641240}
+        m_MethodName: OnTap
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: HedgehogTeam.EasyTouch.QuickTap+OnTap, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  actionTriggering: 0
 --- !u!1 &96923027
 GameObject:
   m_ObjectHideFlags: 0
@@ -5496,6 +5682,89 @@ Transform:
   m_Father: {fileID: 1731810459}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 0}
+--- !u!1 &212921340
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1665745173167492, guid: 138da7529c25386408500b46581b8e33,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 212921341}
+  - component: {fileID: 212921342}
+  - component: {fileID: 212921343}
+  m_Layer: 0
+  m_Name: 6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &212921341
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4986312414898736, guid: 138da7529c25386408500b46581b8e33,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 212921340}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.73000145, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 619619598}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &212921342
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 212921340}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4672354, y: 1, z: 1.4672351}
+  m_Center: {x: -0.0027023554, y: 0, z: 0.0033770204}
+--- !u!114 &212921343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 212921340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9c933eb8b407754a8f98425dfaa784f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quickActionName: 3
+  isMultiTouch: 0
+  is2Finger: 0
+  isOnTouch: 0
+  enablePickOverUI: 0
+  resetPhysic: 0
+  directAction: 0
+  axesAction: 0
+  sensibility: 1
+  directCharacterController: {fileID: 0}
+  inverseAxisValue: 0
+  onTap:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1677641240}
+        m_MethodName: OnTap
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: HedgehogTeam.EasyTouch.QuickTap+OnTap, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  actionTriggering: 0
 --- !u!1 &215964066
 GameObject:
   m_ObjectHideFlags: 0
@@ -6264,6 +6533,22 @@ MeshFilter:
   m_PrefabInternal: {fileID: 82474021}
   m_GameObject: {fileID: 250058477}
   m_Mesh: {fileID: 4300000, guid: 1aa2c52ed2360ba4f8dd4ac82f40402b, type: 3}
+--- !u!1 &252729033
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1037706540949540, guid: cb1b5705a2068cf419461fae9845e756,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 34578203}
+  m_Layer: 0
+  m_Name: Colider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &258001045
 GameObject:
   m_ObjectHideFlags: 0
@@ -6339,6 +6624,89 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1095548444}
   m_GameObject: {fileID: 258001045}
   m_Mesh: {fileID: 4300000, guid: de3599f852f06114fabf9e2e16acedab, type: 3}
+--- !u!1 &260132786
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1823430133927956, guid: 138da7529c25386408500b46581b8e33,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 260132787}
+  - component: {fileID: 260132788}
+  - component: {fileID: 260132789}
+  m_Layer: 0
+  m_Name: 6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &260132787
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4773407841309952, guid: 138da7529c25386408500b46581b8e33,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 260132786}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.73000145, y: 0, z: -1.4640007}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 619619598}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &260132788
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 260132786}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4672354, y: 1, z: 1.4672351}
+  m_Center: {x: -0.0027023554, y: 0, z: 0.0033770204}
+--- !u!114 &260132789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 260132786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9c933eb8b407754a8f98425dfaa784f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quickActionName: 5
+  isMultiTouch: 0
+  is2Finger: 0
+  isOnTouch: 0
+  enablePickOverUI: 0
+  resetPhysic: 0
+  directAction: 0
+  axesAction: 0
+  sensibility: 1
+  directCharacterController: {fileID: 0}
+  inverseAxisValue: 0
+  onTap:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1677641240}
+        m_MethodName: OnTap
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: HedgehogTeam.EasyTouch.QuickTap+OnTap, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  actionTriggering: 0
 --- !u!1 &260654229
 GameObject:
   m_ObjectHideFlags: 0
@@ -11973,6 +12341,89 @@ Transform:
   m_Father: {fileID: 1731810459}
   m_RootOrder: 243
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &474210468
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1676090534984912, guid: cb1b5705a2068cf419461fae9845e756,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 474210469}
+  - component: {fileID: 474210470}
+  - component: {fileID: 474210471}
+  m_Layer: 0
+  m_Name: 5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &474210469
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4795228921299864, guid: cb1b5705a2068cf419461fae9845e756,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 474210468}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.7340002, y: 0, z: -1.4639997}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 34578203}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &474210470
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 474210468}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4672354, y: 1, z: 1.4672351}
+  m_Center: {x: -0.0027023554, y: 0, z: 0.0033770204}
+--- !u!114 &474210471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 474210468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9c933eb8b407754a8f98425dfaa784f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quickActionName: 6
+  isMultiTouch: 0
+  is2Finger: 0
+  isOnTouch: 0
+  enablePickOverUI: 0
+  resetPhysic: 0
+  directAction: 0
+  axesAction: 0
+  sensibility: 1
+  directCharacterController: {fileID: 0}
+  inverseAxisValue: 0
+  onTap:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1677641240}
+        m_MethodName: OnTap
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: HedgehogTeam.EasyTouch.QuickTap+OnTap, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  actionTriggering: 0
 --- !u!1001 &475936547
 Prefab:
   m_ObjectHideFlags: 0
@@ -14287,6 +14738,89 @@ MeshFilter:
   m_PrefabInternal: {fileID: 877946657}
   m_GameObject: {fileID: 567237326}
   m_Mesh: {fileID: 4300000, guid: d94dafa213c348044bffc50a80dec8fd, type: 3}
+--- !u!1 &571950206
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1696580104658148, guid: 138da7529c25386408500b46581b8e33,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 571950207}
+  - component: {fileID: 571950208}
+  - component: {fileID: 571950209}
+  m_Layer: 0
+  m_Name: 6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &571950207
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4343782468911288, guid: 138da7529c25386408500b46581b8e33,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 571950206}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.7339997, y: 0, z: 1.4640007}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 619619598}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &571950208
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 571950206}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4672354, y: 1, z: 1.4672351}
+  m_Center: {x: -0.0027023554, y: 0, z: 0.0033770204}
+--- !u!114 &571950209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 571950206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9c933eb8b407754a8f98425dfaa784f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quickActionName: 2
+  isMultiTouch: 0
+  is2Finger: 0
+  isOnTouch: 0
+  enablePickOverUI: 0
+  resetPhysic: 0
+  directAction: 0
+  axesAction: 0
+  sensibility: 1
+  directCharacterController: {fileID: 0}
+  inverseAxisValue: 0
+  onTap:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1677641240}
+        m_MethodName: OnTap
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: HedgehogTeam.EasyTouch.QuickTap+OnTap, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  actionTriggering: 0
 --- !u!1 &573183399
 GameObject:
   m_ObjectHideFlags: 0
@@ -15246,6 +15780,42 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1731810459}
   m_RootOrder: 73
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &619619597
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1460483965764670, guid: 138da7529c25386408500b46581b8e33,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 619619598}
+  m_Layer: 0
+  m_Name: Colider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &619619598
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4978848764315246, guid: 138da7529c25386408500b46581b8e33,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 619619597}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 82164406}
+  - {fileID: 260132787}
+  - {fileID: 571950207}
+  - {fileID: 1494168721}
+  - {fileID: 212921341}
+  - {fileID: 2048586795}
+  m_Father: {fileID: 1292802651}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &621737813
 GameObject:
@@ -18937,6 +19507,89 @@ MeshFilter:
   m_PrefabInternal: {fileID: 371580676}
   m_GameObject: {fileID: 734844250}
   m_Mesh: {fileID: 4300000, guid: de3599f852f06114fabf9e2e16acedab, type: 3}
+--- !u!1 &736770040
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1607494486484384, guid: cb1b5705a2068cf419461fae9845e756,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 736770041}
+  - component: {fileID: 736770042}
+  - component: {fileID: 736770043}
+  m_Layer: 0
+  m_Name: 5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &736770041
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4417680285592884, guid: cb1b5705a2068cf419461fae9845e756,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 736770040}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.7335191, y: 0, z: 1.4639983}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 34578203}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &736770042
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 736770040}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4672354, y: 1, z: 1.4672351}
+  m_Center: {x: -0.0027023554, y: 0, z: 0.0033770204}
+--- !u!114 &736770043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 736770040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9c933eb8b407754a8f98425dfaa784f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quickActionName: 1
+  isMultiTouch: 0
+  is2Finger: 0
+  isOnTouch: 0
+  enablePickOverUI: 0
+  resetPhysic: 0
+  directAction: 0
+  axesAction: 0
+  sensibility: 1
+  directCharacterController: {fileID: 0}
+  inverseAxisValue: 0
+  onTap:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1677641240}
+        m_MethodName: OnTap
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: HedgehogTeam.EasyTouch.QuickTap+OnTap, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  actionTriggering: 0
 --- !u!1 &737042061
 GameObject:
   m_ObjectHideFlags: 0
@@ -24168,6 +24821,89 @@ Transform:
   m_Father: {fileID: 1731810459}
   m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &986086330
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1386165654752788, guid: cb1b5705a2068cf419461fae9845e756,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 986086331}
+  - component: {fileID: 986086332}
+  - component: {fileID: 986086333}
+  m_Layer: 0
+  m_Name: 5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &986086331
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4152994327211956, guid: cb1b5705a2068cf419461fae9845e756,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 986086330}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.7339997, y: 0, z: 1.4640007}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 34578203}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &986086332
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 986086330}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4672354, y: 1, z: 1.4672351}
+  m_Center: {x: -0.0027023554, y: 0, z: 0.0033770204}
+--- !u!114 &986086333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 986086330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9c933eb8b407754a8f98425dfaa784f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quickActionName: 2
+  isMultiTouch: 0
+  is2Finger: 0
+  isOnTouch: 0
+  enablePickOverUI: 0
+  resetPhysic: 0
+  directAction: 0
+  axesAction: 0
+  sensibility: 1
+  directCharacterController: {fileID: 0}
+  inverseAxisValue: 0
+  onTap:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1677641240}
+        m_MethodName: OnTap
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: HedgehogTeam.EasyTouch.QuickTap+OnTap, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  actionTriggering: 0
 --- !u!1 &986867516
 GameObject:
   m_ObjectHideFlags: 0
@@ -27100,6 +27836,89 @@ Transform:
   m_Father: {fileID: 1731810459}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1080680173
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1897796773122872, guid: cb1b5705a2068cf419461fae9845e756,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1080680174}
+  - component: {fileID: 1080680175}
+  - component: {fileID: 1080680176}
+  m_Layer: 0
+  m_Name: 5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1080680174
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4442364473811556, guid: cb1b5705a2068cf419461fae9845e756,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1080680173}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.73000145, y: 0, z: -1.4640007}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 34578203}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1080680175
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1080680173}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4672354, y: 1, z: 1.4672351}
+  m_Center: {x: -0.0027023554, y: 0, z: 0.0033770204}
+--- !u!114 &1080680176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1080680173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9c933eb8b407754a8f98425dfaa784f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quickActionName: 5
+  isMultiTouch: 0
+  is2Finger: 0
+  isOnTouch: 0
+  enablePickOverUI: 0
+  resetPhysic: 0
+  directAction: 0
+  axesAction: 0
+  sensibility: 1
+  directCharacterController: {fileID: 0}
+  inverseAxisValue: 0
+  onTap:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1677641240}
+        m_MethodName: OnTap
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: HedgehogTeam.EasyTouch.QuickTap+OnTap, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  actionTriggering: 0
 --- !u!1 &1083605210
 GameObject:
   m_ObjectHideFlags: 0
@@ -27731,6 +28550,89 @@ Transform:
   m_Father: {fileID: 1066051045}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1103136121
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1463847759725230, guid: cb1b5705a2068cf419461fae9845e756,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1103136122}
+  - component: {fileID: 1103136123}
+  - component: {fileID: 1103136124}
+  m_Layer: 0
+  m_Name: 5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1103136122
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4301584683159380, guid: cb1b5705a2068cf419461fae9845e756,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1103136121}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.73000145, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 34578203}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1103136123
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1103136121}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4672354, y: 1, z: 1.4672351}
+  m_Center: {x: -0.0027023554, y: 0, z: 0.0033770204}
+--- !u!114 &1103136124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1103136121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9c933eb8b407754a8f98425dfaa784f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quickActionName: 3
+  isMultiTouch: 0
+  is2Finger: 0
+  isOnTouch: 0
+  enablePickOverUI: 0
+  resetPhysic: 0
+  directAction: 0
+  axesAction: 0
+  sensibility: 1
+  directCharacterController: {fileID: 0}
+  inverseAxisValue: 0
+  onTap:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1677641240}
+        m_MethodName: OnTap
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: HedgehogTeam.EasyTouch.QuickTap+OnTap, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  actionTriggering: 0
 --- !u!1001 &1107354050
 Prefab:
   m_ObjectHideFlags: 0
@@ -31944,10 +32846,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1287617102}
   - component: {fileID: 1287617103}
+  - component: {fileID: 1287617107}
   - component: {fileID: 1287617106}
   - component: {fileID: 1287617105}
   - component: {fileID: 1287617104}
-  - component: {fileID: 1287617107}
   m_Layer: 0
   m_Name: 4
   m_TagString: Untagged
@@ -31988,7 +32890,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1287617101}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17ff62cfa1fef7b418586be1a1bf8789, type: 3}
+  m_Script: {fileID: 11500000, guid: 13c51e12e6d68c249a2ccbafa2970461, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1287617105
@@ -31999,7 +32901,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1287617101}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b031193c9f608d41a253cac037176ac, type: 3}
+  m_Script: {fileID: 11500000, guid: 639e6c537177eda449b19e3711579907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1287617106
@@ -32010,7 +32912,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1287617101}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86f44ebb7e2473d4c922025628969ec3, type: 3}
+  m_Script: {fileID: 11500000, guid: 8d0779e509364604584b59d1e233dd58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1287617107
@@ -32060,11 +32962,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1292802651}
-  - component: {fileID: 1292802652}
   - component: {fileID: 1292802655}
   - component: {fileID: 1292802654}
   - component: {fileID: 1292802653}
-  - component: {fileID: 1292802656}
   m_Layer: 0
   m_Name: 6
   m_TagString: Untagged
@@ -32081,22 +32981,11 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.2760034, y: 0, z: -3.2075596}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 619619598}
   m_Father: {fileID: 1066051045}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1292802652
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1292802650}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.003357, y: 1, z: 4.409521}
-  m_Center: {x: -0.10997319, y: 0, z: 0.036719203}
 --- !u!114 &1292802653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32105,7 +32994,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1292802650}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2135e64d2833c6a4db83e255de0bbea5, type: 3}
+  m_Script: {fileID: 11500000, guid: b278f7633ff7ebb44ae8a6a1c590f66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1292802654
@@ -32116,7 +33005,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1292802650}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c7ece6111886c341a934920cad73b7b, type: 3}
+  m_Script: {fileID: 11500000, guid: 1bb4e50bd381ab74f90d5f9520425c13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1292802655
@@ -32127,48 +33016,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1292802650}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e3aed249abb29f4b99309f1c6732a8e, type: 3}
+  m_Script: {fileID: 11500000, guid: 2dc9c8fbff4db454bad34cf5b15bb65f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1292802656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1292802650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c933eb8b407754a8f98425dfaa784f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  quickActionName: 6
-  isMultiTouch: 0
-  is2Finger: 0
-  isOnTouch: 0
-  enablePickOverUI: 0
-  resetPhysic: 0
-  directAction: 0
-  axesAction: 0
-  sensibility: 1
-  directCharacterController: {fileID: 0}
-  inverseAxisValue: 0
-  onTap:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1677641240}
-        m_MethodName: OnTap
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: HedgehogTeam.EasyTouch.QuickTap+OnTap, Assembly-CSharp-firstpass,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  actionTriggering: 0
 --- !u!1001 &1292910733
 Prefab:
   m_ObjectHideFlags: 0
@@ -37392,6 +38242,89 @@ Transform:
   m_Father: {fileID: 1731810459}
   m_RootOrder: 232
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1494168720
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1818924995926348, guid: 138da7529c25386408500b46581b8e33,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1494168721}
+  - component: {fileID: 1494168722}
+  - component: {fileID: 1494168723}
+  m_Layer: 0
+  m_Name: 6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1494168721
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4956072758473942, guid: 138da7529c25386408500b46581b8e33,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1494168720}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.7340002, y: 0, z: -1.4639997}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 619619598}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1494168722
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1494168720}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4672354, y: 1, z: 1.4672351}
+  m_Center: {x: -0.0027023554, y: 0, z: 0.0033770204}
+--- !u!114 &1494168723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1494168720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9c933eb8b407754a8f98425dfaa784f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quickActionName: 6
+  isMultiTouch: 0
+  is2Finger: 0
+  isOnTouch: 0
+  enablePickOverUI: 0
+  resetPhysic: 0
+  directAction: 0
+  axesAction: 0
+  sensibility: 1
+  directCharacterController: {fileID: 0}
+  inverseAxisValue: 0
+  onTap:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1677641240}
+        m_MethodName: OnTap
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: HedgehogTeam.EasyTouch.QuickTap+OnTap, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  actionTriggering: 0
 --- !u!1 &1499494950
 GameObject:
   m_ObjectHideFlags: 0
@@ -50123,11 +51056,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1899261945}
-  - component: {fileID: 1899261946}
   - component: {fileID: 1899261949}
   - component: {fileID: 1899261948}
   - component: {fileID: 1899261947}
-  - component: {fileID: 1899261950}
   m_Layer: 0
   m_Name: 5
   m_TagString: Untagged
@@ -50144,22 +51075,11 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.3480024, y: 0, z: -3.2040114}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 34578203}
   m_Father: {fileID: 1066051045}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1899261946
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1899261944}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.003357, y: 1, z: 4.409521}
-  m_Center: {x: -0.10997319, y: 0, z: 0.036719203}
 --- !u!114 &1899261947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50193,45 +51113,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e3aed249abb29f4b99309f1c6732a8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1899261950
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1899261944}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c933eb8b407754a8f98425dfaa784f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  quickActionName: 5
-  isMultiTouch: 0
-  is2Finger: 0
-  isOnTouch: 0
-  enablePickOverUI: 0
-  resetPhysic: 0
-  directAction: 0
-  axesAction: 0
-  sensibility: 1
-  directCharacterController: {fileID: 0}
-  inverseAxisValue: 0
-  onTap:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1677641240}
-        m_MethodName: OnTap
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: HedgehogTeam.EasyTouch.QuickTap+OnTap, Assembly-CSharp-firstpass,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  actionTriggering: 0
 --- !u!1001 &1906753461
 Prefab:
   m_ObjectHideFlags: 0
@@ -53237,6 +54118,89 @@ Transform:
   m_Father: {fileID: 1731810459}
   m_RootOrder: 269
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2048586794
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1934286310516214, guid: 138da7529c25386408500b46581b8e33,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2048586795}
+  - component: {fileID: 2048586796}
+  - component: {fileID: 2048586797}
+  m_Layer: 0
+  m_Name: 6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2048586795
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4855335805047798, guid: 138da7529c25386408500b46581b8e33,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2048586794}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.7335191, y: 0, z: 1.4639983}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 619619598}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2048586796
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2048586794}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4672354, y: 1, z: 1.4672351}
+  m_Center: {x: -0.0027023554, y: 0, z: 0.0033770204}
+--- !u!114 &2048586797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2048586794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9c933eb8b407754a8f98425dfaa784f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quickActionName: 1
+  isMultiTouch: 0
+  is2Finger: 0
+  isOnTouch: 0
+  enablePickOverUI: 0
+  resetPhysic: 0
+  directAction: 0
+  axesAction: 0
+  sensibility: 1
+  directCharacterController: {fileID: 0}
+  inverseAxisValue: 0
+  onTap:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1677641240}
+        m_MethodName: OnTap
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: HedgehogTeam.EasyTouch.QuickTap+OnTap, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  actionTriggering: 0
 --- !u!1001 &2049803622
 Prefab:
   m_ObjectHideFlags: 0

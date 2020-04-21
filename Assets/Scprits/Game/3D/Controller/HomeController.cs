@@ -66,40 +66,5 @@ namespace GameScene
                 MessageManager.GetSingleton().SendMsg("PopupDetailed_ShowView",new object[] {this.buildId,this.buildLevel,this.maxLevel,this.coin});//传输的值中，第一个是BuildID，第二个是是否显示建造按钮，第三个是是否显示升级按钮,第四个是当前玩家金币数
             }
         }
-
-        /// <summary>
-        /// 判断是否在详细界面显示建造按钮
-        /// </summary>
-        /// <param name="buildLevel"></param>
-        /// <returns></returns>
-        bool isBtnBuild(int buildLevel)
-        {
-            if (buildLevel == 0)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
-        /// <summary>
-        /// 判断是否在详细界面显示升级按钮
-        /// </summary>
-        /// <param name="buildLevel"></param>
-        /// <param name="maxLevel"></param>
-        /// <returns></returns>
-        bool isBtnUpgrade(int buildLevel,int maxLevel)
-        {
-            if (buildLevel < maxLevel)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
     }
 }
