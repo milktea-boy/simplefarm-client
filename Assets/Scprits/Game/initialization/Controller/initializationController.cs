@@ -46,7 +46,7 @@ namespace GameScene
             //(string message, System.Object param = null)
             //MessageManager.GetSingleton().SendMsg 第二个参数是任何数据类型，可以分配给其他MVC
             //分开发送，细化处理
-            int level = int.Parse(data["level"].ToString());//农场等级
+            int playerLevel = int.Parse(data["level"].ToString());//农场等级
 
             int coin = int.Parse(data["coin"].ToString());//金币数
 
@@ -59,7 +59,7 @@ namespace GameScene
             Debug.Log("开始分发MainUI信息----------------------------------------------");
 
             //分发mainUI信息
-            MessageManager.GetSingleton().SendMsg("Initialization_MainUIInfo", new object[] { level,coin,nickName,exp,needExp});
+            MessageManager.GetSingleton().SendMsg("Initialization_MainUIInfo", new object[] { playerLevel,coin,nickName,exp,needExp});
 
             Debug.Log("开始分发buildInfo----------------------------------------------");
 
@@ -79,7 +79,7 @@ namespace GameScene
                         int buildId = int.Parse(args["buildId"].ToString());//建筑ID
                         int buildLevel = int.Parse(args["level"].ToString());//建筑等级
                         int maxLevel = int.Parse(args["maxLevel"].ToString());//当前农场等级的最大等级
-                        MessageManager.GetSingleton().SendMsg("Initialization_buildInfo_" + i, new object[] { buildId, buildLevel, maxLevel, level,coin,nickName,exp,needExp});
+                        MessageManager.GetSingleton().SendMsg("Initialization_buildInfo_" + i, new object[] { buildId, buildLevel, maxLevel, playerLevel,coin,nickName,exp,needExp});
                                                                                                            //建筑ID    建筑等级    建筑最大级 主等级  金币  昵称  经验  所需经验  
                     }
                 }

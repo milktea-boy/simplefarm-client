@@ -2,24 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace GameScene {
-
+namespace GameScene
+{
     /// <summary>
-    /// 水井弹窗控制器
+    /// 畜舍弹窗控制器二
     /// </summary>
-    public class PopupWellController : BaseController<PopupWellModel, PopupWellView> {
+    public class PopupLivestockController_2 : BaseController<PopupLivestockModel_2, PopupLivestockView_2>
+    {
         public void Awake()
         {
             base.Awake();
 
-            MessageManager.GetSingleton().RegisterMessageListener("PopupWell_ShowView", ShowView);
+            MessageManager.GetSingleton().RegisterMessageListener("PopupLivestock_2_ShowView", ShowView);
         }
 
         private void OnDestroy()
         {
-            MessageManager.GetSingleton().UnRegisterMessageListener("PopupWell_ShowView", ShowView);
+            MessageManager.GetSingleton().UnRegisterMessageListener("PopupLivestock_2_ShowView", ShowView);
         }
-
         public void OnBtnCloseClick()
         {
             View.HideView();
@@ -29,6 +29,5 @@ namespace GameScene {
         {
             View.ShowView();
         }
-
     }
 }

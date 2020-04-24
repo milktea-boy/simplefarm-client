@@ -5,9 +5,9 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{5C0F37E7-F4C7-5801-932C-E5777D3202B7}</ProjectGuid>
+    <ProjectGuid>{CF2F5C21-E9F6-1B23-BC75-054A26C2920B}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
@@ -15,7 +15,7 @@
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
     <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectGenerator>VSTU</UnityProjectGenerator>
-    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityProjectType>GamePlugins:3</UnityProjectType>
     <UnityBuildTarget>Android:13</UnityBuildTarget>
     <UnityVersion>2017.4.30f1</UnityVersion>
     <RootNamespace></RootNamespace>
@@ -250,242 +250,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="simpleFarm.Plugins.csproj">
-      <Project>{CF2F5C21-E9F6-1B23-BC75-054A26C2920B}</Project>
-      <Name>simpleFarm.Plugins</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Assets\Demigiant\DOTweenPro\DOTweenAnimation.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouch\Examples\4.X\AdvancedExamples\AutoSelect\MultiLayerTouch.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouch\Examples\4.X\AdvancedExamples\AutoSelect\MultiLayerUI.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouch\Examples\4.X\AdvancedExamples\MultiCamera\MultiCameraTouch.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouch\Examples\4.X\AdvancedExamples\MultiCamera\MultiCameraUI.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouch\Examples\4.X\GameExemple\RTSExample\CubeSelect.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouch\Examples\4.X\GameExemple\RTSExample\RTSCamera.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouch\Examples\4.X\GameExemple\RunBall\Ball.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouch\Examples\4.X\GameExemple\RunBall\BallRunPlayer.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouch\Examples\4.X\GameExemple\RunBall\ThirdPersonCamera.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouch\Examples\4.X\LoadExamples.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouch\Examples\4.X\SimpleExamples\MultiFinger\FingerTouch.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouch\Examples\4.X\SimpleExamples\MultiFinger\MutliFingersScreenTouch.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouch\Examples\4.X\SimpleExamples\OneFinger\DoubleTapMe.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouch\Examples\4.X\SimpleExamples\OneFinger\DragMe.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouch\Examples\4.X\SimpleExamples\OneFinger\LongTapMe.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouch\Examples\4.X\SimpleExamples\OneFinger\Swipe.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouch\Examples\4.X\SimpleExamples\OneFinger\TapMe.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouch\Examples\4.X\SimpleExamples\OneFinger\TouchMe.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouch\Examples\4.X\SimpleExamples\TwoFingers\PinchMe.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouch\Examples\4.X\SimpleExamples\TwoFingers\TooglePickMethodUI.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouch\Examples\4.X\SimpleExamples\TwoFingers\TwistMe.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouch\Examples\4.X\SimpleExamples\TwoFingers\TwoDoubleTapMe.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouch\Examples\4.X\SimpleExamples\TwoFingers\TwoDragMe.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouch\Examples\4.X\SimpleExamples\TwoFingers\TwoLongTapMe.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouch\Examples\4.X\SimpleExamples\TwoFingers\TwoSwipe.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouch\Examples\4.X\SimpleExamples\TwoFingers\TwoTapMe.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouch\Examples\4.X\SimpleExamples\TwoFingers\TwoTouchMe.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouch\Examples\4.X\UnityUI\UICompatibility\ETWindow.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouch\Examples\4.X\UnityUI\UICompatibility\GlobalEasyTouchEvent.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouch\Examples\4.X\UnityUI\UICompatibility\UICompatibility.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouch\Examples\4.X\UnityUI\UICompatibility\UIWindow.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouch\Examples\4.X\UnityUI\UITwistPinch\UIDrag.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouch\Examples\4.X\UnityUI\UITwistPinch\UIPinch.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouch\Examples\4.X\UnityUI\UITwistPinch\UITwist.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouch\Examples\5.X new features\Script\RTS_NewSyntaxe.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouch\Examples\5.X new features\Script\SimpleActionExample.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouchControls\Component\ETCSetDirectActionTransform.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouchControls\Examples\_Medias\SliderText.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouchControls\Examples\Version 1.X\Button-Event-Input\ButtonInputUI.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouchControls\Examples\Version 1.X\Button-Event-Input\ButtonUIEvent.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouchControls\Examples\Version 1.X\ControlEventInput\ControlUIEvent.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouchControls\Examples\Version 1.X\ControlEventInput\ControlUIInput.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouchControls\Examples\Version 1.X\DPadClassicalTime\DPadParameterUI.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouchControls\Examples\Version 1.X\FPSExample\FPSPlayerControl.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouchControls\Examples\Version 1.X\FPSExample\ImpactEffect.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouchControls\Examples\Version 1.X\JoystickParameter\AxisXUi.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouchControls\Examples\Version 1.X\LoadLevelScript.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouchControls\Examples\Version 1.X\TouchPad-Event-Input\TouchPadUIEvent.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouchControls\Examples\Version 2.X_New Features\Script\CharacterAnimation.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouchControls\Examples\Version 2.X_New Features\Script\CharacterAnimationDungeon.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouchControls\Plugins\ComponentExtensions.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouchControls\Plugins\ETCArea.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouchControls\Plugins\ETCAxis.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouchControls\Plugins\ETCBase.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouchControls\Plugins\ETCButton.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouchControls\Plugins\ETCDPad.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouchControls\Plugins\ETCInput.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouchControls\Plugins\ETCJoystick.cs" />
-    <Compile Include="Assets\EasyTouchBundle\EasyTouchControls\Plugins\ETCTouchPad.cs" />
-    <Compile Include="Assets\Framework\Log\LogManager.cs" />
-    <Compile Include="Assets\Framework\Log\LogWriter.cs" />
-    <Compile Include="Assets\Framework\Message\MessageManager.cs" />
-    <Compile Include="Assets\Framework\mvc\BaseController.cs" />
-    <Compile Include="Assets\Framework\SocketServer\Constants.cs" />
-    <Compile Include="Assets\Framework\SocketServer\JsonFx\About.cs" />
-    <Compile Include="Assets\Framework\SocketServer\JsonFx\DataReaderProvider.cs" />
-    <Compile Include="Assets\Framework\SocketServer\JsonFx\DataWriterProvider.cs" />
-    <Compile Include="Assets\Framework\SocketServer\JsonFx\EcmaScriptIdentifier.cs" />
-    <Compile Include="Assets\Framework\SocketServer\JsonFx\EcmaScriptWriter.cs" />
-    <Compile Include="Assets\Framework\SocketServer\JsonFx\IDataReader.cs" />
-    <Compile Include="Assets\Framework\SocketServer\JsonFx\IDataWriter.cs" />
-    <Compile Include="Assets\Framework\SocketServer\JsonFx\IJsonSerializable.cs" />
-    <Compile Include="Assets\Framework\SocketServer\JsonFx\JsonDataReader.cs" />
-    <Compile Include="Assets\Framework\SocketServer\JsonFx\JsonDataWriter.cs" />
-    <Compile Include="Assets\Framework\SocketServer\JsonFx\JsonIgnoreAttribute.cs" />
-    <Compile Include="Assets\Framework\SocketServer\JsonFx\JsonMemberAttribute.cs" />
-    <Compile Include="Assets\Framework\SocketServer\JsonFx\JsonNameAttribute.cs" />
-    <Compile Include="Assets\Framework\SocketServer\JsonFx\JsonOptInAttribute.cs" />
-    <Compile Include="Assets\Framework\SocketServer\JsonFx\JsonReader.cs" />
-    <Compile Include="Assets\Framework\SocketServer\JsonFx\JsonReaderSettings.cs" />
-    <Compile Include="Assets\Framework\SocketServer\JsonFx\JsonSerializationException.cs" />
-    <Compile Include="Assets\Framework\SocketServer\JsonFx\JsonSpecifiedPropertyAttribute.cs" />
-    <Compile Include="Assets\Framework\SocketServer\JsonFx\JsonToken.cs" />
-    <Compile Include="Assets\Framework\SocketServer\JsonFx\JsonWriter.cs" />
-    <Compile Include="Assets\Framework\SocketServer\JsonFx\JsonWriterSettings.cs" />
-    <Compile Include="Assets\Framework\SocketServer\JsonFx\TypeCoercionUtility.cs" />
-    <Compile Include="Assets\Framework\SocketServer\JsonFx\XmlDataReader.cs" />
-    <Compile Include="Assets\Framework\SocketServer\JsonFx\XmlDataWriter.cs" />
-    <Compile Include="Assets\Framework\SocketServer\Message.cs" />
-    <Compile Include="Assets\Framework\SocketServer\MessageControl.cs" />
-    <Compile Include="Assets\Framework\SocketServer\ReadFileTool.cs" />
-    <Compile Include="Assets\Framework\SocketServer\Socket.cs" />
-    <Compile Include="Assets\Framework\SocketServer\SocketServer.cs" />
-    <Compile Include="Assets\Framework\SocketServer\Thread.cs" />
-    <Compile Include="Assets\Framework\SocketServer\TinyJson.cs" />
-    <Compile Include="Assets\Framework\SocketServer\Transmit.cs" />
-    <Compile Include="Assets\Framework\Sound\SoundManager.cs" />
-    <Compile Include="Assets\Framework\Tool\EventTriggerListener.cs" />
-    <Compile Include="Assets\Framework\Tool\GameObjectPool.cs" />
-    <Compile Include="Assets\Framework\Tool\GameTools.cs" />
-    <Compile Include="Assets\Framework\Tool\GetGPS.cs" />
-    <Compile Include="Assets\Framework\Tool\ObjectPool.cs" />
-    <Compile Include="Assets\Framework\UI\BasePopup.cs" />
-    <Compile Include="Assets\Framework\UI\PopupCommon.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballGroupAttribute.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Components\AmbientOcclusionComponent.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Components\BloomComponent.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Components\BuiltinDebugViewsComponent.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Components\ColorGradingComponent.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Components\DepthOfFieldComponent.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Components\DitheringComponent.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Components\EyeAdaptationComponent.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Components\FogComponent.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Components\FxaaComponent.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Components\GrainComponent.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Components\MotionBlurComponent.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Components\ScreenSpaceReflectionComponent.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Components\TaaComponent.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Components\UserLutComponent.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Components\VignetteComponent.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Models\BloomModel.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Models\BuiltinDebugViewsModel.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Models\ChromaticAberrationModel.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Models\ColorGradingModel.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Models\DepthOfFieldModel.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Models\DitheringModel.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Models\EyeAdaptationModel.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Models\FogModel.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Models\GrainModel.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Models\ScreenSpaceReflectionModel.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Models\UserLutModel.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Models\VignetteModel.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\PostProcessingBehaviour.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\PostProcessingComponent.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\PostProcessingContext.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\PostProcessingModel.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\PostProcessingProfile.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Utils\ColorGradingCurve.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
-    <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
-    <Compile Include="Assets\Resources\Model\Prefab\Old\Content\Plugins\DealyedActivation.cs" />
-    <Compile Include="Assets\Resources\Model\Prefab\Old\Content\Plugins\Light Shaft\Scripts\LightShaft.cs" />
-    <Compile Include="Assets\Resources\Model\Prefab\Old\Content\Plugins\TreeSwinger.cs" />
-    <Compile Include="Assets\Scprits\Game\3D\Controller\GroundController_1.cs" />
-    <Compile Include="Assets\Scprits\Game\3D\Controller\GroundController_2.cs" />
-    <Compile Include="Assets\Scprits\Game\3D\Controller\HomeController.cs" />
-    <Compile Include="Assets\Scprits\Game\3D\Controller\HunterController.cs" />
-    <Compile Include="Assets\Scprits\Game\3D\Controller\LivestockController_1.cs" />
-    <Compile Include="Assets\Scprits\Game\3D\Controller\LivestockController_2.cs" />
-    <Compile Include="Assets\Scprits\Game\3D\Controller\ShopController.cs" />
-    <Compile Include="Assets\Scprits\Game\3D\Controller\WarehouseController.cs" />
-    <Compile Include="Assets\Scprits\Game\3D\Controller\WellController.cs" />
-    <Compile Include="Assets\Scprits\Game\3D\Model\GroundModel_1.cs" />
-    <Compile Include="Assets\Scprits\Game\3D\Model\GroundModel_2.cs" />
-    <Compile Include="Assets\Scprits\Game\3D\Model\HomeModel.cs" />
-    <Compile Include="Assets\Scprits\Game\3D\Model\HunterModel.cs" />
-    <Compile Include="Assets\Scprits\Game\3D\Model\LivestockModel_1.cs" />
-    <Compile Include="Assets\Scprits\Game\3D\Model\LivestockModel_2.cs" />
-    <Compile Include="Assets\Scprits\Game\3D\Model\ShopModel.cs" />
-    <Compile Include="Assets\Scprits\Game\3D\Model\WarehouseModel.cs" />
-    <Compile Include="Assets\Scprits\Game\3D\Model\WellModel.cs" />
-    <Compile Include="Assets\Scprits\Game\3D\View\GroundView_1.cs" />
-    <Compile Include="Assets\Scprits\Game\3D\View\GroundView_2.cs" />
-    <Compile Include="Assets\Scprits\Game\3D\View\HomeView.cs" />
-    <Compile Include="Assets\Scprits\Game\3D\View\HunterView.cs" />
-    <Compile Include="Assets\Scprits\Game\3D\View\LivestockView_1.cs" />
-    <Compile Include="Assets\Scprits\Game\3D\View\LivestockView_2.cs" />
-    <Compile Include="Assets\Scprits\Game\3D\View\ShopView.cs" />
-    <Compile Include="Assets\Scprits\Game\3D\View\WarehouseView.cs" />
-    <Compile Include="Assets\Scprits\Game\3D\View\WellView.cs" />
-    <Compile Include="Assets\Scprits\Game\initialization\Controller\initializationController.cs" />
-    <Compile Include="Assets\Scprits\Game\initialization\Model\initializationModel.cs" />
-    <Compile Include="Assets\Scprits\Game\initialization\View\initializationView.cs" />
-    <Compile Include="Assets\Scprits\Game\Touch\Controller\TouchController.cs" />
-    <Compile Include="Assets\Scprits\Game\Touch\Model\TouchModel.cs" />
-    <Compile Include="Assets\Scprits\Game\Touch\View\TouchView.cs" />
-    <Compile Include="Assets\Scprits\Game\UI\Controller\GameMainUIController.cs" />
-    <Compile Include="Assets\Scprits\Game\UI\Controller\PopupGroundController_1.cs" />
-    <Compile Include="Assets\Scprits\Game\UI\Controller\PopupGroundController_2.cs" />
-    <Compile Include="Assets\Scprits\Game\UI\Controller\PopupHomeController.cs" />
-    <Compile Include="Assets\Scprits\Game\UI\Controller\PopupHunterController.cs" />
-    <Compile Include="Assets\Scprits\Game\UI\Controller\PopupLivestockController_1.cs" />
-    <Compile Include="Assets\Scprits\Game\UI\Controller\PopupLivestockController_2.cs" />
-    <Compile Include="Assets\Scprits\Game\UI\Controller\PopupOverviewController.cs" />
-    <Compile Include="Assets\Scprits\Game\UI\Controller\PopupShopController.cs" />
-    <Compile Include="Assets\Scprits\Game\UI\Controller\PopupWarehouseController.cs" />
-    <Compile Include="Assets\Scprits\Game\UI\Controller\PopupWellController.cs" />
-    <Compile Include="Assets\Scprits\Game\UI\Model\GameMainUIModel.cs" />
-    <Compile Include="Assets\Scprits\Game\UI\Model\PopupGroundModel_1.cs" />
-    <Compile Include="Assets\Scprits\Game\UI\Model\PopupGroundModel_2.cs" />
-    <Compile Include="Assets\Scprits\Game\UI\Model\PopupHomeModel.cs" />
-    <Compile Include="Assets\Scprits\Game\UI\Model\PopupHunterModel.cs" />
-    <Compile Include="Assets\Scprits\Game\UI\Model\PopupLivestockModel_1.cs" />
-    <Compile Include="Assets\Scprits\Game\UI\Model\PopupLivestockModel_2.cs" />
-    <Compile Include="Assets\Scprits\Game\UI\Model\PopupOverviewModel.cs" />
-    <Compile Include="Assets\Scprits\Game\UI\Model\PopupShopModel.cs" />
-    <Compile Include="Assets\Scprits\Game\UI\Model\PopupWarehouseModel.cs" />
-    <Compile Include="Assets\Scprits\Game\UI\Model\PopupWellModel.cs" />
-    <Compile Include="Assets\Scprits\Game\UI\View\GameMainUIView.cs" />
-    <Compile Include="Assets\Scprits\Game\UI\View\PopupGroundView_1.cs" />
-    <Compile Include="Assets\Scprits\Game\UI\View\PopupGroundView_2.cs" />
-    <Compile Include="Assets\Scprits\Game\UI\View\PopupHomeView.cs" />
-    <Compile Include="Assets\Scprits\Game\UI\View\PopupHunterView.cs" />
-    <Compile Include="Assets\Scprits\Game\UI\View\PopupLivestockView_1.cs" />
-    <Compile Include="Assets\Scprits\Game\UI\View\PopupLivestockView_2.cs" />
-    <Compile Include="Assets\Scprits\Game\UI\View\PopupOverviewView.cs" />
-    <Compile Include="Assets\Scprits\Game\UI\View\PopupShopView.cs" />
-    <Compile Include="Assets\Scprits\Game\UI\View\PopupWarehouseView.cs" />
-    <Compile Include="Assets\Scprits\Game\UI\View\PopupWellView.cs" />
-    <Compile Include="Assets\Scprits\Login\UI\Controller\LoginMainUIController.cs" />
-    <Compile Include="Assets\Scprits\Login\UI\Controller\PopupLoginController.cs" />
-    <Compile Include="Assets\Scprits\Login\UI\Controller\PopupRegisterController.cs" />
-    <Compile Include="Assets\Scprits\Login\UI\Model\LoginMainUIModel.cs" />
-    <Compile Include="Assets\Scprits\Login\UI\Model\PopupLoginModel.cs" />
-    <Compile Include="Assets\Scprits\Login\UI\Model\PopupRegisterModel.cs" />
-    <Compile Include="Assets\Scprits\Login\UI\View\LoginMainUIView.cs" />
-    <Compile Include="Assets\Scprits\Login\UI\View\PopupLoginView.cs" />
-    <Compile Include="Assets\Scprits\Login\UI\View\PopupRegisterView.cs" />
-    <Compile Include="Assets\Scprits\Start\StartSceneStarter.cs" />
-    <Compile Include="Assets\Scprits\Test\SceneCameraView.cs" />
+    <Compile Include="Assets\Plugins\EasyTouch\Components\EasyTouchTrigger.cs" />
+    <Compile Include="Assets\Plugins\EasyTouch\Components\QuickBase.cs" />
+    <Compile Include="Assets\Plugins\EasyTouch\Components\QuickDrag.cs" />
+    <Compile Include="Assets\Plugins\EasyTouch\Components\QuickEnterOverExist.cs" />
+    <Compile Include="Assets\Plugins\EasyTouch\Components\QuickLongTap.cs" />
+    <Compile Include="Assets\Plugins\EasyTouch\Components\QuickPinch.cs" />
+    <Compile Include="Assets\Plugins\EasyTouch\Components\QuickSwipe.cs" />
+    <Compile Include="Assets\Plugins\EasyTouch\Components\QuickTap.cs" />
+    <Compile Include="Assets\Plugins\EasyTouch\Components\QuickTouch.cs" />
+    <Compile Include="Assets\Plugins\EasyTouch\Components\QuickTwist.cs" />
+    <Compile Include="Assets\Plugins\EasyTouch\Engine\BaseFinger.cs" />
+    <Compile Include="Assets\Plugins\EasyTouch\Engine\EasyTouch.cs" />
+    <Compile Include="Assets\Plugins\EasyTouch\Engine\EasyTouchInput.cs" />
+    <Compile Include="Assets\Plugins\EasyTouch\Engine\ECamera.cs" />
+    <Compile Include="Assets\Plugins\EasyTouch\Engine\Finger.cs" />
+    <Compile Include="Assets\Plugins\EasyTouch\Engine\Gesture.cs" />
+    <Compile Include="Assets\Plugins\EasyTouch\Engine\TwoFingerGesture.cs" />
+    <Compile Include="Assets\Plugins\RoundPicture\BaseImage.cs" />
+    <Compile Include="Assets\Plugins\RoundPicture\CircleImage.cs" />
+    <Compile Include="Assets\Plugins\RoundPicture\SetPropertyUtility.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Demigiant\DOTween\DOTween.XML" />

@@ -8,7 +8,7 @@ namespace GameScene
     /// <summary>
     /// 游戏主菜单视图
     /// </summary>
-    public class GameMainUIView : MonoBehaviour
+    public class GameMainUIView : BasePopup
     {
         public Text textGrade;
 

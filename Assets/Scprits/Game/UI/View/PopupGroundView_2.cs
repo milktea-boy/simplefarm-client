@@ -2,17 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace GameScene {
-
+namespace GameScene
+{
     /// <summary>
-    /// 地块弹窗视图
+    /// 地块弹窗视图二
     /// </summary>
-    public class PopupGroundView : BasePopup {
-
+    public class PopupGroundView_2 : BasePopup
+    {
         private void Start()
         {
             gameObject.SetActive(false);
         }
-
     }
 }

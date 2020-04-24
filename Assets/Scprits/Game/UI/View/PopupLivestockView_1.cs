@@ -5,9 +5,9 @@ using UnityEngine;
 namespace GameScene {
 
     /// <summary>
-    /// 畜舍弹窗视图
+    /// 畜舍弹窗视图一
     /// </summary>
-    public class PopupLivestockView : BasePopup {
+    public class PopupLivestockView_1 : BasePopup {
 
         private void Start()
         {

@@ -19,20 +19,26 @@ namespace GameScene {
         int playerExp;
         int playerNeedExp;
 
+        public GameObject[] prefab;
+
         private void Awake()
         {
             base.Awake();
 
             MessageManager.GetSingleton().RegisterMessageListener("Initialization_buildInfo_8", SetData);
 
-            MessageManager.GetSingleton().RegisterMessageListener("OnTap_8", SendToPopupDetailed);
+            MessageManager.GetSingleton().RegisterMessageListener("OnTap_8", SendToPopupOverview);
+
+            MessageManager.GetSingleton().RegisterMessageListener("Building_8", Building);
         }
 
         private void OnDestroy()
         {
             MessageManager.GetSingleton().UnRegisterMessageListener("Initialization_buildInfo_8", SetData);
 
-            MessageManager.GetSingleton().UnRegisterMessageListener("OnTap_8", SendToPopupDetailed);
+            MessageManager.GetSingleton().UnRegisterMessageListener("OnTap_8", SendToPopupOverview);
+
+            MessageManager.GetSingleton().UnRegisterMessageListener("Building_8", Building);
         }
 
         void SetData(object data)
@@ -48,9 +54,11 @@ namespace GameScene {
             this.nickName = args[5].ToString();
             this.playerExp = int.Parse(args[6].ToString());
             this.playerNeedExp = int.Parse(args[7].ToString());
+
+            LoadModel(this.buildId, this.buildLevel);
         }
 
-        void SendToPopupDetailed(object data)
+        void SendToPopupOverview(object data)
         {
             object[] args = (object[])data;
 
@@ -61,8 +69,42 @@ namespace GameScene {
 
             if (dataBuildId == this.buildId)
             {
-                MessageManager.GetSingleton().SendMsg("PopupDetailed_ShowView", new object[] { this.buildId, this.buildLevel, this.maxLevel, this.coin });//传输的值中，第一个是BuildID，第二个是是否显示建造按钮，第三个是是否显示升级按钮,第四个是当前玩家金币数
+                MessageManager.GetSingleton().SendMsg("PopupOverview_ShowView", new object[] { this.buildId, this.buildLevel, this.maxLevel, this.coin });//传输的值中，第一个是BuildID，第二个是是否显示建造按钮，第三个是是否显示升级按钮,第四个是当前玩家金币数
             }
+        }
+
+        void Building(object data)
+        {
+            object[] args = (object[])data;
+            if (!(this.buildId == int.Parse(args[0].ToString()) && this.buildLevel == int.Parse(args[1].ToString())))
+            {
+                return;
+            }
+            else
+            {
+                LoadModel(this.buildId, this.buildLevel);
+            }
+        }
+
+        //初始化这个建筑的模型
+        void LoadModel(int buildId, int buildLevel)
+        {
+            int count = transform.GetChildCount();
+            for (int i = 0; i < count; i++)
+            {
+                Destroy(transform.GetChild(0));
+            }
+
+            if (buildLevel == 0)
+            {
+                return;
+            }
+
+            GameObjectPool gameObjectPool = new GameObjectPool(prefab[buildLevel - 1]);
+            GameObject go = gameObjectPool.Get();
+            go.transform.parent = this.transform;
+            go.transform.localPosition = Vector3.zero;
+            go.transform.localScale = Vector3.one;
         }
     }
 }

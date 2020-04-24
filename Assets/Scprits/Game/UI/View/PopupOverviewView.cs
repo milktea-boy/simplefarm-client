@@ -7,7 +7,7 @@ namespace GameScene
     /// <summary>
     /// 游戏场景详细菜单视图
     /// </summary>
-    public class PopupDetailedView : BasePopup
+    public class PopupOverviewView : BasePopup
     {
         private void Start()
         {

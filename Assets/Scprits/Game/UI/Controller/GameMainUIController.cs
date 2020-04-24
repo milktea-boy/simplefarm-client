@@ -16,11 +16,19 @@ namespace GameScene
             base.Awake();
 
             MessageManager.GetSingleton().RegisterMessageListener("Initialization_MainUIInfo", SetData);
+
+            MessageManager.GetSingleton().RegisterMessageListener("MainUI_ShowView", ShowView);
+
+            MessageManager.GetSingleton().RegisterMessageListener("MainUI_HideView", HideView );
         }
 
         private void OnDestroy()
         {
             MessageManager.GetSingleton().UnRegisterMessageListener("Initialization_MainUIInfo", SetData);
+
+            MessageManager.GetSingleton().UnRegisterMessageListener("MainUI_ShowView", ShowView);
+
+            MessageManager.GetSingleton().UnRegisterMessageListener("MainUI_HideView", HideView);
         }
 
         private void SetData(object data)
@@ -38,6 +46,22 @@ namespace GameScene
             {
                 View.circleImageExpImage.fillPercent = exp / needExp;
             }
+        }
+
+        private void ShowView(object data)
+        {
+            View.ShowView();
+
+            GameObject mainUI_Mask = GameObject.Find("MainUI_Mask");
+            if (mainUI_Mask != null)
+            {
+                Destroy(mainUI_Mask);
+            }
+        }
+
+        private void HideView(object data)
+        {
+            View.HideView();
         }
     }
 }

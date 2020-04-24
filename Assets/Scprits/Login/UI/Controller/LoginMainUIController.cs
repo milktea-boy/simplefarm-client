@@ -19,6 +19,5 @@ namespace LoginScene
         {
             MessageManager.GetSingleton().SendMsg("PopupRegister_ShowView");
         }
-
     }
 }

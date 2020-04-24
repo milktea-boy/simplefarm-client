@@ -26,14 +26,14 @@ namespace GameScene
 
             MessageManager.GetSingleton().RegisterMessageListener("Initialization_buildInfo_4", SetData);
 
-            MessageManager.GetSingleton().RegisterMessageListener("OnTap_4", SendToPopupDetailed);
+            MessageManager.GetSingleton().RegisterMessageListener("OnTap_4", SendToPopupOverview);
         }
 
         private void OnDestroy()
         {
             MessageManager.GetSingleton().UnRegisterMessageListener("Initialization_buildInfo_4", SetData);
 
-            MessageManager.GetSingleton().UnRegisterMessageListener("OnTap_4", SendToPopupDetailed);
+            MessageManager.GetSingleton().UnRegisterMessageListener("OnTap_4", SendToPopupOverview);
         }
 
         void SetData(object data)
@@ -51,7 +51,7 @@ namespace GameScene
             this.playerNeedExp = int.Parse(args[7].ToString());
         }
 
-        void SendToPopupDetailed(object data)
+        void SendToPopupOverview(object data)
         {
             object[] args = (object[])data;
 
@@ -62,7 +62,7 @@ namespace GameScene
 
             if (dataBuildId == this.buildId)
             {
-                MessageManager.GetSingleton().SendMsg("PopupDetailed_ShowView", new object[] { this.buildId, this.buildLevel, this.maxLevel, this.coin });//传输的值中，第一个是BuildID，第二个是是否显示建造按钮，第三个是是否显示升级按钮,第四个是当前玩家金币数
+                MessageManager.GetSingleton().SendMsg("PopupOverview_ShowView", new object[] { this.buildId, this.buildLevel, this.maxLevel, this.coin });//传输的值中，第一个是BuildID，第二个是是否显示建造按钮，第三个是是否显示升级按钮,第四个是当前玩家金币数
             }
         }
 

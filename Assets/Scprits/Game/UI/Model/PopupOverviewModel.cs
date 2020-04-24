@@ -9,7 +9,7 @@ namespace GameScene
     /// <summary>
     /// 游戏场景详细菜单模型
     /// </summary>
-    public class PopupDetailedModel : MonoBehaviour
+    public class PopupOverviewModel : MonoBehaviour
     {
         private Action<Hashtable> getUpgradeBuildInfoCallback;
 

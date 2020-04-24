@@ -5,9 +5,9 @@ using UnityEngine;
 namespace GameScene {
 
     /// <summary>
-    /// 畜舍弹窗模型
+    /// 地块弹窗模型一
     /// </summary>
-    public class PopupLivestockModel : MonoBehaviour {
+    public class PopupGroundModel_1 : MonoBehaviour {
 
     }
 }

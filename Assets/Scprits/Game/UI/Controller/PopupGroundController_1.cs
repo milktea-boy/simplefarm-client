@@ -5,19 +5,20 @@ using UnityEngine;
 namespace GameScene {
 
     /// <summary>
-    /// 水井弹窗控制器
+    /// 地块弹窗控制器一
     /// </summary>
-    public class PopupWellController : BaseController<PopupWellModel, PopupWellView> {
+    public class PopupGroundController_1 : BaseController<PopupGroundModel_1, PopupGroundView_1> {
+
         public void Awake()
         {
             base.Awake();
 
-            MessageManager.GetSingleton().RegisterMessageListener("PopupWell_ShowView", ShowView);
+            MessageManager.GetSingleton().RegisterMessageListener("PopupFarmland_1_ShowView", ShowView);
         }
 
         private void OnDestroy()
         {
-            MessageManager.GetSingleton().UnRegisterMessageListener("PopupWell_ShowView", ShowView);
+            MessageManager.GetSingleton().UnRegisterMessageListener("PopupFarmland_1_ShowView", ShowView);
         }
 
         public void OnBtnCloseClick()
